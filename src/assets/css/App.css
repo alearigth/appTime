@@ -7,9 +7,33 @@ body {
 }
 
 .input-group {
+  position: relative;
   width: 60%;
 }
 
 .card {
-  max-width: 60%;
+  position: relative;
+ max-width: fit-content;
+}
+
+.card-title {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.card-date {
+  position: absolute;
+  padding: 20px;
+}
+.card-temp {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 320px;
+  font-size: 50px;
+}
+.card-desc {
+  position: absolute;
+  padding-left: 15px;
+  margin-top: 390px;
 }
