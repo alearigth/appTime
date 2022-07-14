@@ -21,7 +21,7 @@ const Form = ({ newLocation }) => {
             placeholder="Ciudad"
             onChange={(e) => setCity(e.target.value)}
           />
-          <button className="btn btn-primary input-group-text" type="submit">
+          <button className="btn btn-secondary input-group-text" type="submit">
             Search
           </button>
         </div>
