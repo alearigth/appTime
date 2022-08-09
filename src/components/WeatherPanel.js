@@ -14,7 +14,7 @@ const WeatherPanel = () => {
   const [forecast, setForecast] = useState([]);
   const [loading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
-  const [location, setLocation] = useState("");
+  const [, setLocation] = useState("");
 
   const getLocation = async (loc) => {
     setLoading(true);
@@ -25,7 +25,7 @@ const WeatherPanel = () => {
 
     await fetch(urlWeather)
       .then((response) => {
-        if (!response.ok) throw { response };
+        if (!response.ok) throw  response ;
         return response.json();
       })
       .then((weatherData) => {
@@ -44,7 +44,7 @@ const WeatherPanel = () => {
 
     await fetch(urlForecast)
       .then((response) => {
-        if (!response.ok) throw { response };
+        if (!response.ok) throw  response ;
         return response.json();
       })
       .then((forecastData) => {
@@ -60,7 +60,6 @@ const WeatherPanel = () => {
         setShow(false);
       });
   };
-
   return (
     <React.Fragment>
       <Form newLocation={getLocation} />
